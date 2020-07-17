@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\v-zhgl\\source\\repos\\Update_Accessibility_App\\Update_Accessibility_App\\Update_Accessibility_App.csproj",
+      "projectUniqueName": "C:\\Users\\v-zhgl\\source\\repos\\Accessibility_Demo\\Update_Accessibilty_App\\Update_Accessibility_App\\Update_Accessibility_App.csproj",
       "projectName": "Update_Accessibility_App",
-      "projectPath": "C:\\Users\\v-zhgl\\source\\repos\\Update_Accessibility_App\\Update_Accessibility_App\\Update_Accessibility_App.csproj",
+      "projectPath": "C:\\Users\\v-zhgl\\source\\repos\\Accessibility_Demo\\Update_Accessibilty_App\\Update_Accessibility_App\\Update_Accessibility_App.csproj",
       "packagesPath": "C:\\Users\\v-zhgl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\v-zhgl\\source\\repos\\Update_Accessibility_App\\Update_Accessibility_App\\obj\\",
+      "outputPath": "C:\\Users\\v-zhgl\\source\\repos\\Accessibility_Demo\\Update_Accessibilty_App\\Update_Accessibility_App\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\v-zhgl\\AppData\\Roaming\\NuGet\\NuGet.Config",
