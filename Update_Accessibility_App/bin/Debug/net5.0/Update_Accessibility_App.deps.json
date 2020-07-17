@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Update_Accessibility_App/1.0.0": {
+        "runtime": {
+          "Update_Accessibility_App.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Update_Accessibility_App/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
