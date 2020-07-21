@@ -140,10 +140,10 @@
       this.radioButton1.AutoSize = true;
       this.radioButton1.Location = new System.Drawing.Point(307, 114);
       this.radioButton1.Name = "radioButton1";
-      this.radioButton1.Size = new System.Drawing.Size(94, 19);
+      this.radioButton1.Size = new System.Drawing.Size(84, 19);
       this.radioButton1.TabIndex = 22;
       this.radioButton1.TabStop = true;
-      this.radioButton1.Text = "radioButton1";
+      this.radioButton1.Text = "Agreement";
       this.radioButton1.UseVisualStyleBackColor = true;
       // 
       // numericUpDown1
@@ -159,7 +159,7 @@
       this.domainUpDown1.Name = "domainUpDown1";
       this.domainUpDown1.Size = new System.Drawing.Size(120, 23);
       this.domainUpDown1.TabIndex = 20;
-      this.domainUpDown1.Text = "domainUpDown1";
+      this.domainUpDown1.Text = "Student count";
       // 
       // richTextBox1
       // 
@@ -174,9 +174,9 @@
       this.checkBox1.AutoSize = true;
       this.checkBox1.Location = new System.Drawing.Point(307, 9);
       this.checkBox1.Name = "checkBox1";
-      this.checkBox1.Size = new System.Drawing.Size(83, 19);
+      this.checkBox1.Size = new System.Drawing.Size(80, 19);
       this.checkBox1.TabIndex = 18;
-      this.checkBox1.Text = "checkBox1";
+      this.checkBox1.Text = "Is_Student";
       this.checkBox1.UseVisualStyleBackColor = true;
       // 
       // maskedTextBox1

@@ -27,4 +27,3 @@ C:\Users\v-zhgl\source\repos\Accessibility_Demo\Update_Accessibilty_App\Update_A
 C:\Users\v-zhgl\source\repos\Accessibility_Demo\Update_Accessibilty_App\Update_Accessibility_App\obj\Debug\net5.0\Update_Accessibility_App.dll
 C:\Users\v-zhgl\source\repos\Accessibility_Demo\Update_Accessibilty_App\Update_Accessibility_App\obj\Debug\net5.0\Update_Accessibility_App.pdb
 C:\Users\v-zhgl\source\repos\Accessibility_Demo\Update_Accessibilty_App\Update_Accessibility_App\obj\Debug\net5.0\Update_Accessibility_App.genruntimeconfig.cache
-C:\Users\v-zhgl\source\repos\Accessibility_Demo\Update_Accessibilty_App\Update_Accessibility_App\obj\Debug\net5.0\Update_Accessibility_App.csprojAssemblyReference.cache
