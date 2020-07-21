@@ -19,7 +19,6 @@ C:\Users\v-zhgl\source\repos\Accessibility_Demo\Update_Accessibilty_App\Update_A
 C:\Users\v-zhgl\source\repos\Accessibility_Demo\Update_Accessibilty_App\Update_Accessibility_App\bin\Debug\net5.0\Update_Accessibility_App.runtimeconfig.dev.json
 C:\Users\v-zhgl\source\repos\Accessibility_Demo\Update_Accessibilty_App\Update_Accessibility_App\bin\Debug\net5.0\Update_Accessibility_App.dll
 C:\Users\v-zhgl\source\repos\Accessibility_Demo\Update_Accessibilty_App\Update_Accessibility_App\bin\Debug\net5.0\Update_Accessibility_App.pdb
-C:\Users\v-zhgl\source\repos\Accessibility_Demo\Update_Accessibilty_App\Update_Accessibility_App\obj\Debug\net5.0\Update_Accessibility_App.csprojAssemblyReference.cache
 C:\Users\v-zhgl\source\repos\Accessibility_Demo\Update_Accessibilty_App\Update_Accessibility_App\obj\Debug\net5.0\Update_Accessibility_App.Binding_Data.resources
 C:\Users\v-zhgl\source\repos\Accessibility_Demo\Update_Accessibilty_App\Update_Accessibility_App\obj\Debug\net5.0\Update_Accessibility_App.csproj.GenerateResource.cache
 C:\Users\v-zhgl\source\repos\Accessibility_Demo\Update_Accessibilty_App\Update_Accessibility_App\obj\Debug\net5.0\Update_Accessibility_App.AssemblyInfoInputs.cache
@@ -28,3 +27,4 @@ C:\Users\v-zhgl\source\repos\Accessibility_Demo\Update_Accessibilty_App\Update_A
 C:\Users\v-zhgl\source\repos\Accessibility_Demo\Update_Accessibilty_App\Update_Accessibility_App\obj\Debug\net5.0\Update_Accessibility_App.dll
 C:\Users\v-zhgl\source\repos\Accessibility_Demo\Update_Accessibilty_App\Update_Accessibility_App\obj\Debug\net5.0\Update_Accessibility_App.pdb
 C:\Users\v-zhgl\source\repos\Accessibility_Demo\Update_Accessibilty_App\Update_Accessibility_App\obj\Debug\net5.0\Update_Accessibility_App.genruntimeconfig.cache
+C:\Users\v-zhgl\source\repos\Accessibility_Demo\Update_Accessibilty_App\Update_Accessibility_App\obj\Debug\net5.0\Update_Accessibility_App.csprojAssemblyReference.cache

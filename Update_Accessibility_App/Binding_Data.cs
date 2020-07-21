@@ -54,18 +54,18 @@ namespace Update_Accessibility_App
             };
 
 
-            //Binding Data For TextBox & Label control
-            Textbox_Class stu = new Textbox_Class(123456, "Number2", "Female");
+            //Binding Data For TextBox/Label control/DomianUpDown/NumericUpDown/LinkLabel/CheckBox/RadioButton/RichTextBox/MaskedTextBox/Button 
+            Textbox_Class stu = new Textbox_Class(1, "studentNumber", "Female", 12121, "PhoneNUmber","Basketball"+ '\n'+ "Football",true, 10, 20);
             this.textBox1.DataBindings.Add("Text", stu, "StudentNo");
-            this.textBox2.DataBindings.Add("Text", stu, "StudentName");
-            this.textBox3.DataBindings.Add("Text", stu, "StudentSex");
-
-            Textbox_Class stu3 = new Textbox_Class(123456, "Number3", "Female");
-            this.label1.DataBindings.Add("Text", stu3, "StudentNo");
-            this.label2.DataBindings.Add("Text", stu3, "StudentName");
-            this.label3.DataBindings.Add("Text", stu3, "StudentSex");
-
-            
-        }
+            this.domainUpDown1.DataBindings.Add("Text", stu, "Student_domin");
+            this.numericUpDown1.DataBindings.Add("Text", stu, "Student_numeric");
+            this.label1.DataBindings.Add("Text", stu, "StudentName");
+            this.button1.DataBindings.Add("Text", stu, "StudentSex");
+            this.maskedTextBox1.DataBindings.Add("Text", stu, "StudentPhoneNum");
+            this.linkLabel1.DataBindings.Add("Text", stu, "PhoneNumber");
+            this.richTextBox1.DataBindings.Add("Text", stu, "Student_habit");
+            this.checkBox1.DataBindings.Add("Checked", stu, "Student_Flag");
+            this.radioButton1.DataBindings.Add("Checked", stu, "Student_Flag");
+    }
     }
 }
