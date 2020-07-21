@@ -98,9 +98,9 @@
       this.label1.AutoSize = true;
       this.label1.Location = new System.Drawing.Point(10, 13);
       this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(38, 15);
+      this.label1.Size = new System.Drawing.Size(109, 15);
       this.label1.TabIndex = 12;
-      this.label1.Text = "label1";
+      this.label1.Text = "StudentPhoneNum";
       // 
       // textBox1
       // 
@@ -191,10 +191,10 @@
       this.linkLabel1.AutoSize = true;
       this.linkLabel1.Location = new System.Drawing.Point(9, 79);
       this.linkLabel1.Name = "linkLabel1";
-      this.linkLabel1.Size = new System.Drawing.Size(60, 15);
+      this.linkLabel1.Size = new System.Drawing.Size(84, 15);
       this.linkLabel1.TabIndex = 15;
       this.linkLabel1.TabStop = true;
-      this.linkLabel1.Text = "linkLabel1";
+      this.linkLabel1.Text = "HomeNumber";
       // 
       // Binding_Data
       // 

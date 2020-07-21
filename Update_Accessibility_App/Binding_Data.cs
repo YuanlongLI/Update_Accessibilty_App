@@ -12,10 +12,10 @@ namespace Update_Accessibility_App
 {
     public partial class Binding_Data : Form
     {
-        List<Student> personA = new List<Student>();
-        List<Student> personB = new List<Student>();
-        List<Student> personC = new List<Student>();
-        List<Student> personD = new List<Student>();
+        List<Student> studentA = new List<Student>();
+        List<Student> studentB = new List<Student>();
+        List<Student> studentC = new List<Student>();
+        List<Student> studentD = new List<Student>();
         public Binding_Data()
         {
             InitializeComponent();
@@ -27,35 +27,35 @@ namespace Update_Accessibility_App
 
             for (int i = 0; i < 6; i++)
             {
-               personA.Add(new Student(i, "Name 1"  + i, "Male"));
-               personB.Add(new Student(i *2, "Name 11" + i *2, "Female"));
-               personC.Add(new Student(i *3, "Name 12" + i *3, "Male"));
-               personD.Add(new Student(i *4, "Name 14" + i *4, "Female"));
+            studentA.Add(new Student(i, "Name 1"  + i, "Male"));
+            studentB.Add(new Student(i *2, "Name 11" + i *2, "Female"));
+            studentC.Add(new Student(i *3, "Name 12" + i *3, "Male"));
+            studentD.Add(new Student(i *4, "Name 14" + i *4, "Female"));
             }
 
             // Binding Data For ListBox & ComboBox controls
-            listBox1.DataSource = personA;
-            comboBox1.DataSource = personB;
-            comboBox2.DataSource = personC;
-            comboBox3.DataSource = personD;
+            listBox1.DataSource = studentA;
+            comboBox1.DataSource = studentB;
+            comboBox2.DataSource = studentC;
+            comboBox3.DataSource = studentD;
 
-            listBox1.DisplayMember = "Name";
-            comboBox1.DisplayMember = "Name";
-            comboBox2.DisplayMember = "Name";
-            comboBox3.DisplayMember = "Name";
+            listBox1.DisplayMember = "StudentName";
+            comboBox1.DisplayMember = "StudentName";
+            comboBox2.DisplayMember = "StudentName";
+            comboBox3.DisplayMember = "StudentName";
 
             // Binding Data For DataGridView control
             dataGridView1.DataSource = new List<Student>
              {
-             new Student(24,"A",  "Male"),
-             new Student(23, "B","Female"),
-             new Student(22,"C", "Male"),
-             new Student(21,"D","Female"),
+             new Student(1, "StudenA", "Female", 12121, 1001,"Basketball",false, 10, 11),
+             new Student(2, "StudentB", "Male", 12122, 1002,"Basketball",true, 10, 11),
+             new Student(3, "StudentC", "Female", 12123, 1003,"Football",false, 10, 11),
+             new Student(4, "StudentD", "Male", 12124,1004,"Football",true, 10, 11),
             };
 
 
       //Binding Data For TextBox/Label control/DomianUpDown/NumericUpDown/LinkLabel/CheckBox/RadioButton/RichTextBox/MaskedTextBox/Button 
-      Student stu = new Student(1, "StudentNumber", "Female", 12121, "PhoneNUmber","Basketball"+ '\n'+ "Football",true, 10, 11);
+      Student stu = new Student(1, "StudentNumber", "Female", 12121, 12121,"Basketball"+ '\n'+ "Football",true, 10, 11);
             this.textBox1.DataBindings.Add("Text", stu, "StudentNo");
             this.domainUpDown1.DataBindings.Add("Text", stu, "Lucky_Number");
             this.numericUpDown1.DataBindings.Add("Text", stu, "Student_Count");
