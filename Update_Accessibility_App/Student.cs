@@ -16,7 +16,7 @@ namespace Update_Accessibility_App
       StudentSex = studentSex;
     }
 
-    public Student(int studentNo, string studentName, string studentSex, int studentPhoneNum, int homeNumber, string student_habit, bool is_Student, int student_Count, int Lucky_number)
+    public Student(int studentNo, string studentName, string studentSex, int studentPhoneNum, string homeNumber, string student_habit, bool is_Student, int student_Count, int Lucky_number)
     {
       StudentNo = studentNo;
       StudentName = studentName;
@@ -33,7 +33,7 @@ namespace Update_Accessibility_App
     public string StudentName { get; set; }
     public string StudentSex { get; set; }
     public int StudentPhoneNum { get; set; }
-    public int HomeNumber { get; set; }
+    public string HomeNumber { get; set; }
     public string Student_habit { get; set; }
     public bool Is_Student { get; set; }
     public int Student_Count { get; set; }
