@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,6 +30,7 @@ namespace Update_Accessibility_App
       Lucky_Number = Lucky_number;
     }
 
+ 
     public int StudentNo { get; set; }
     public string StudentName { get; set; }
     public string StudentSex { get; set; }
@@ -40,5 +42,6 @@ namespace Update_Accessibility_App
     public int Lucky_Number { get; set; }
     
   }
+
 }
 

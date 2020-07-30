@@ -17,10 +17,11 @@ namespace Update_Accessibility_App
         List<Student> studentB = new List<Student>();
         List<Student> studentC = new List<Student>();
         List<Student> studentD = new List<Student>();
+        List<Student> studentE = new List<Student>();
         public Binding_Data()
         {
             InitializeComponent();
-            
+
         }
 
         private void Binding_Data_Load(object sender, EventArgs e)
@@ -28,22 +29,25 @@ namespace Update_Accessibility_App
 
             for (int i = 0; i < 6; i++)
             {
-            studentA.Add(new Student(i, "Name 1"  + i, "Male"));
-            studentB.Add(new Student(i *2, "Name 11" + i *2, "Female"));
-            studentC.Add(new Student(i *3, "Name 12" + i *3, "Male"));
-            studentD.Add(new Student(i *4, "Name 14" + i *4, "Female"));
+                studentA.Add(new Student(i, "Name 1" + i, "Male"));
+                studentB.Add(new Student(i * 2, "Name 11" + i * 2, "Female"));
+                studentC.Add(new Student(i * 3, "Name 12" + i * 3, "Male"));
+                studentD.Add(new Student(i * 4, "Name 14" + i * 4, "Female"));
+                studentE.Add(new Student(i * 5, "Name 15" + i * 5, "male"));
             }
 
-            // Binding Data For ListBox & ComboBox controls by using DadSource property
+            // Binding Data For ListBox & ComboBox & CheckedListBox controls by using DadSource property
             listBox1.DataSource = studentA;
             comboBox1.DataSource = studentB;
             comboBox2.DataSource = studentC;
             comboBox3.DataSource = studentD;
+            checkedListBox1.DataSource = studentE;
 
             listBox1.DisplayMember = "StudentName";
             comboBox1.DisplayMember = "StudentName";
             comboBox2.DisplayMember = "StudentName";
             comboBox3.DisplayMember = "StudentName";
+            checkedListBox1.DisplayMember = "StudentName";
 
             // Binding Data For DataGridView control by using DadSource property
             dataGridView1.DataSource = new List<Student>
@@ -56,7 +60,7 @@ namespace Update_Accessibility_App
 
 
             //Binding Data For TextBox/Label control/DomianUpDown/NumericUpDown/LinkLabel/CheckBox/RadioButton/RichTextBox/MaskedTextBox/Button by using DadaBindings property
-            Student stu = new Student(1, "StudentNumber", "Female", 12121, "HomeNumber","Habits" + "\n"+"Basketball"+ '\n'+ "Football",true, 10, 11);
+            Student stu = new Student(1, "StudentNumber", "Female", 12121, "HomeNumber", "Habits" + "\n" + "Basketball" + '\n' + "Football", true, 10, 11);
             this.textBox1.DataBindings.Add("Text", stu, "StudentNo");
             this.domainUpDown1.DataBindings.Add("Text", stu, "Lucky_Number");
             this.numericUpDown1.DataBindings.Add("Text", stu, "Student_Count");
@@ -68,35 +72,89 @@ namespace Update_Accessibility_App
             this.checkBox1.DataBindings.Add("Checked", stu, "Is_Student");
             this.radioButton1.DataBindings.Add("Checked", stu, "Is_Student");
 
-            //Binding Data Fro TreeView control by using SqlServer
+            //Binding Data For TreeView control by using DataSet
             BindTree();
+
+            //Binding Data For ListView control by using DataSet
+            BindListView();
         }
 
-        //Binding Data Fro TreeView control by using SqlServer Eg:https://blog.csdn.net/a16496528/article/details/8290846
-        private DataSet GetData()
+        //Create DataSet https://blog.csdn.net/weixin_34168880/article/details/93965811
+
+        public DataSet CreateDataSet()
         {
-            string connstr = "server= winformssrvvm01;uid=sa;pwd='asp+rocks4u';database=Northwind;";
-            SqlConnection con = new SqlConnection(connstr);
-            con.Open();
-            SqlDataAdapter da = new SqlDataAdapter("select top 6 * from Customers", con);
+            DataSet stuDS = new DataSet();
+            DataTable stuTable = new DataTable("Students");
+            DataColumn stuColumn = new DataColumn();
 
-            DataSet ds = new DataSet();
-            da.Fill(ds);
-            return ds;
+            stuTable.Columns.Add("StuName", typeof(string));
+            stuTable.Columns.Add("StuSex", typeof(string));
+            stuTable.Columns.Add("StuAge", typeof(int));
+
+            DataRow stuRow = stuTable.NewRow();
+            stuRow["StuName"] = "sofie";
+            stuRow["StuSex"] = "male";
+            stuRow["StuAge"] = 21;
+            stuTable.Rows.Add(stuRow);
+
+            stuRow = stuTable.NewRow();
+            stuRow["StuName"] = "Jrain";
+            stuRow["StuSex"] = "Female";
+            stuRow["StuAge"] = 21;
+            stuTable.Rows.Add(stuRow);
+
+            stuRow = stuTable.NewRow();
+            stuRow["StuName"] = "Lida";
+            stuRow["StuSex"] = "male";
+            stuRow["StuAge"] = 21;
+            stuTable.Rows.Add(stuRow);
+            stuDS.Tables.Add(stuTable);
+
+            return stuDS;
         }
+
+        //Binding Data For TreeView control by using DataSet
         public void BindTree()
         {
-            DataSet ds = GetData();
+            DataSet ds = CreateDataSet();
             if (ds.Tables[0].Rows.Count > 0)
             {
                 for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
                 {
                     TreeNode node = new TreeNode();
-                    node.Text = ds.Tables[0].Rows[i]["CustomerID"].ToString();
-                    node.Tag = ds.Tables[0].Rows[i]["City"].ToString();
+                    node.Text = ds.Tables[0].Rows[i]["StuName"].ToString();
                     this.treeView1.Nodes.Add(node);
                 }
             }
         }
+
+        //Binding Data For ListView control by using DataSet
+        public void BindListView()
+        {
+            listView1.View = View.Details;
+            DataSet ds = CreateDataSet();
+            int row_Count = ds.Tables[0].Rows.Count;
+            int col_Count = ds.Tables[0].Columns.Count;
+
+            for ( int j=0; j<col_Count; j++)
+            {
+                string colName = ds.Tables[0].Columns[j].ColumnName;
+                listView1.Columns.Add(colName);
+            }
+
+            for (int i =0; i < row_Count; i++)
+            {
+                string itemName = ds.Tables[0].Rows[i][0].ToString();
+                ListViewItem item = new ListViewItem(itemName,i);
+                listView1.Items.Add(item);
+
+                for (int j = 1; j < col_Count; j++)
+                {
+                    item.SubItems.Add(ds.Tables[0].Rows[i][j].ToString());
+                }
+            }
+
+        }
+
     }
 }
