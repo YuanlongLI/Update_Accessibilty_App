@@ -29,8 +29,6 @@ namespace Update_Accessibility_App
       Student_Count = student_Count;
       Lucky_Number = Lucky_number;
     }
-
- 
     public int StudentNo { get; set; }
     public string StudentName { get; set; }
     public string StudentSex { get; set; }

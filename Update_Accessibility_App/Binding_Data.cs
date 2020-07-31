@@ -16,8 +16,6 @@ namespace Update_Accessibility_App
         List<Student> studentA = new List<Student>();
         List<Student> studentB = new List<Student>();
         List<Student> studentC = new List<Student>();
-        List<Student> studentD = new List<Student>();
-        List<Student> studentE = new List<Student>();
         public Binding_Data()
         {
             InitializeComponent();
@@ -32,21 +30,15 @@ namespace Update_Accessibility_App
                 studentA.Add(new Student(i, "Name 1" + i, "Male"));
                 studentB.Add(new Student(i * 2, "Name 11" + i * 2, "Female"));
                 studentC.Add(new Student(i * 3, "Name 12" + i * 3, "Male"));
-                studentD.Add(new Student(i * 4, "Name 14" + i * 4, "Female"));
-                studentE.Add(new Student(i * 5, "Name 15" + i * 5, "male"));
             }
 
             // Binding Data For ListBox & ComboBox & CheckedListBox controls by using DadSource property
             listBox1.DataSource = studentA;
             comboBox1.DataSource = studentB;
-            comboBox2.DataSource = studentC;
-            comboBox3.DataSource = studentD;
-            checkedListBox1.DataSource = studentE;
+            checkedListBox1.DataSource = studentC;
 
             listBox1.DisplayMember = "StudentName";
             comboBox1.DisplayMember = "StudentName";
-            comboBox2.DisplayMember = "StudentName";
-            comboBox3.DisplayMember = "StudentName";
             checkedListBox1.DisplayMember = "StudentName";
 
             // Binding Data For DataGridView control by using DadSource property
@@ -79,8 +71,51 @@ namespace Update_Accessibility_App
             BindListView();
         }
 
-        //Create DataSet https://blog.csdn.net/weixin_34168880/article/details/93965811
+        //Binding Data For TreeView control by using DataSet
+        public void BindTree()
+        {
+            DataSet ds = CreateDataSet();
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+                {
+                    TreeNode node = new TreeNode();
+                    node.Text = ds.Tables[0].Rows[i]["StuName"].ToString();
+                    this.treeView1.Nodes.Add(node);
+                }
+            }
+        }
 
+        //Binding Data For ListView control by using DataSet
+        public void BindListView()
+        {
+            listView1.View = View.Details;
+            DataSet ds = CreateDataSet();
+
+            int row_Count = ds.Tables[0].Rows.Count;
+            int col_Count = ds.Tables[0].Columns.Count;
+
+            for ( int j=0; j<col_Count; j++)
+            {
+                string colName = ds.Tables[0].Columns[j].ColumnName;
+                listView1.Columns.Add(colName);
+            }
+
+            for (int i =0; i < row_Count; i++)
+            {
+                string itemName = ds.Tables[0].Rows[i][0].ToString();
+                ListViewItem item = new ListViewItem(itemName,i);
+                listView1.Items.Add(item);
+
+                for (int j = 1; j < col_Count; j++)
+                {
+                    item.SubItems.Add(ds.Tables[0].Rows[i][j].ToString());
+                }
+            }
+
+        }
+
+       // Create DataSet 
         public DataSet CreateDataSet()
         {
             DataSet stuDS = new DataSet();
@@ -112,49 +147,5 @@ namespace Update_Accessibility_App
 
             return stuDS;
         }
-
-        //Binding Data For TreeView control by using DataSet
-        public void BindTree()
-        {
-            DataSet ds = CreateDataSet();
-            if (ds.Tables[0].Rows.Count > 0)
-            {
-                for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
-                {
-                    TreeNode node = new TreeNode();
-                    node.Text = ds.Tables[0].Rows[i]["StuName"].ToString();
-                    this.treeView1.Nodes.Add(node);
-                }
-            }
-        }
-
-        //Binding Data For ListView control by using DataSet
-        public void BindListView()
-        {
-            listView1.View = View.Details;
-            DataSet ds = CreateDataSet();
-            int row_Count = ds.Tables[0].Rows.Count;
-            int col_Count = ds.Tables[0].Columns.Count;
-
-            for ( int j=0; j<col_Count; j++)
-            {
-                string colName = ds.Tables[0].Columns[j].ColumnName;
-                listView1.Columns.Add(colName);
-            }
-
-            for (int i =0; i < row_Count; i++)
-            {
-                string itemName = ds.Tables[0].Rows[i][0].ToString();
-                ListViewItem item = new ListViewItem(itemName,i);
-                listView1.Items.Add(item);
-
-                for (int j = 1; j < col_Count; j++)
-                {
-                    item.SubItems.Add(ds.Tables[0].Rows[i][j].ToString());
-                }
-            }
-
-        }
-
     }
 }
