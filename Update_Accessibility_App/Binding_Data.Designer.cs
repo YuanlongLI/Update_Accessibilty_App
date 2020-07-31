@@ -56,6 +56,8 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.AccessibleDescription = "CB1";
+            this.comboBox1.AccessibleName = "CB1";
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(10, 9);
             this.comboBox1.Name = "comboBox1";
@@ -65,6 +67,8 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AccessibleDescription = "DGV1";
+            this.dataGridView1.AccessibleName = "DGV1";
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 21);
             this.dataGridView1.Name = "dataGridView1";
@@ -74,6 +78,8 @@
             // 
             // label1
             // 
+            this.label1.AccessibleDescription = "L1";
+            this.label1.AccessibleName = "L1";
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(10, 48);
             this.label1.Name = "label1";
@@ -83,6 +89,8 @@
             // 
             // textBox1
             // 
+            this.textBox1.AccessibleDescription = "TB1";
+            this.textBox1.AccessibleName = "TB1";
             this.textBox1.Location = new System.Drawing.Point(10, 77);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(142, 23);
@@ -91,6 +99,8 @@
             // 
             // button1
             // 
+            this.button1.AccessibleDescription = "BT1";
+            this.button1.AccessibleName = "BT1";
             this.button1.Location = new System.Drawing.Point(10, 136);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
@@ -100,6 +110,8 @@
             // 
             // panel1
             // 
+            this.panel1.AccessibleDescription = "Pane1";
+            this.panel1.AccessibleName = "Panel1";
             this.panel1.Controls.Add(this.radioButton1);
             this.panel1.Controls.Add(this.numericUpDown1);
             this.panel1.Controls.Add(this.domainUpDown1);
@@ -118,6 +130,8 @@
             // 
             // radioButton1
             // 
+            this.radioButton1.AccessibleDescription = "RB1";
+            this.radioButton1.AccessibleName = "RB1";
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(336, 77);
             this.radioButton1.Name = "radioButton1";
@@ -129,6 +143,8 @@
             // 
             // numericUpDown1
             // 
+            this.numericUpDown1.AccessibleDescription = "NUO1";
+            this.numericUpDown1.AccessibleName = "NUO1";
             this.numericUpDown1.Location = new System.Drawing.Point(336, 39);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(120, 23);
@@ -136,6 +152,8 @@
             // 
             // domainUpDown1
             // 
+            this.domainUpDown1.AccessibleDescription = "DUO1";
+            this.domainUpDown1.AccessibleName = "DUO1";
             this.domainUpDown1.Location = new System.Drawing.Point(336, 10);
             this.domainUpDown1.Name = "domainUpDown1";
             this.domainUpDown1.Size = new System.Drawing.Size(120, 23);
@@ -144,6 +162,8 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.AccessibleDescription = "RT1";
+            this.richTextBox1.AccessibleName = "RT1";
             this.richTextBox1.Location = new System.Drawing.Point(169, 102);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(151, 85);
@@ -152,6 +172,8 @@
             // 
             // checkBox1
             // 
+            this.checkBox1.AccessibleDescription = "CB2";
+            this.checkBox1.AccessibleName = "CB2";
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(169, 77);
             this.checkBox1.Name = "checkBox1";
@@ -162,6 +184,8 @@
             // 
             // maskedTextBox1
             // 
+            this.maskedTextBox1.AccessibleDescription = "MT1";
+            this.maskedTextBox1.AccessibleName = "MT1";
             this.maskedTextBox1.Location = new System.Drawing.Point(169, 45);
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(142, 23);
@@ -170,6 +194,8 @@
             // 
             // linkLabel1
             // 
+            this.linkLabel1.AccessibleDescription = "IL1";
+            this.linkLabel1.AccessibleName = "IL1";
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Location = new System.Drawing.Point(169, 12);
             this.linkLabel1.Name = "linkLabel1";
@@ -180,6 +206,8 @@
             // 
             // label2
             // 
+            this.label2.AccessibleDescription = "L2";
+            this.label2.AccessibleName = "L2";
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(37, 224);
             this.label2.Name = "label2";
@@ -189,6 +217,8 @@
             // 
             // treeView1
             // 
+            this.treeView1.AccessibleDescription = "TV1";
+            this.treeView1.AccessibleName = "TV1";
             this.treeView1.Location = new System.Drawing.Point(12, 242);
             this.treeView1.Name = "treeView1";
             this.treeView1.Size = new System.Drawing.Size(129, 101);
@@ -196,6 +226,8 @@
             // 
             // label3
             // 
+            this.label3.AccessibleDescription = "L3";
+            this.label3.AccessibleName = "L3";
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(244, 225);
             this.label3.Name = "label3";
@@ -205,6 +237,8 @@
             // 
             // listView1
             // 
+            this.listView1.AccessibleDescription = "LV1";
+            this.listView1.AccessibleName = "LV1";
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(162, 246);
             this.listView1.Name = "listView1";
@@ -215,6 +249,8 @@
             // 
             // label4
             // 
+            this.label4.AccessibleDescription = "L4";
+            this.label4.AccessibleName = "L4";
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(418, 225);
             this.label4.Name = "label4";
@@ -224,6 +260,8 @@
             // 
             // checkedListBox1
             // 
+            this.checkedListBox1.AccessibleDescription = "CLB1";
+            this.checkedListBox1.AccessibleName = "CLB1";
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Location = new System.Drawing.Point(405, 249);
             this.checkedListBox1.Name = "checkedListBox1";
@@ -232,6 +270,8 @@
             // 
             // label5
             // 
+            this.label5.AccessibleDescription = "L5";
+            this.label5.AccessibleName = "L5";
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(597, 225);
             this.label5.Name = "label5";
@@ -241,6 +281,8 @@
             // 
             // listBox1
             // 
+            this.listBox1.AccessibleDescription = "LB5";
+            this.listBox1.AccessibleName = "LB5";
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
             this.listBox1.Location = new System.Drawing.Point(563, 249);
@@ -264,7 +306,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Binding_Data";
-            this.Text = "Binding_Data_For_Controls";
+            this.Text = "+";
             this.Load += new System.EventHandler(this.Binding_Data_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
